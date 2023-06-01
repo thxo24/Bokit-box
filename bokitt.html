@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-image: url('image-437258414.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    color: #000000   ;
+     }
+ 
+</style>
+    <title>Page de livraison alimentaire</title>
+    <style>
+        /* Styles CSS pour la mise en page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+        
+        .result-message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bokit Box </h1>
+    <div class="form-container">
+        <form id="delivery-form" action="livraisonn.html">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse :</label>
+                <input type="text" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numero :</label>
+                <input type="text" id="phone" required>
+            </div>
+            <div class="form-group">
+     <label>Choisir la box souhait&eacute;e :</label>
+                <label for="bokit-box">
+                    <input type="radio" id="bokit-box" name="box-type" value="bokit"> Bokit box
+                    <br>
+                   
+                </label>
+                <br>
+                <label for="frozen-box">
+                    <input type="radio" id="frozen-box" name="box-type" value="frozen"> Box surgel&eacute;e
+                    <br>
+                    
+    </label>
+</div>
+
+            <button type="submit">Passer la commande</button>
+        </form>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <p class="result-message">Merci ! Votre commande a bien été prise en charge.</p>
+    </div>
+
+    <script>
+        // Code JavaScript pour la gestion du formulaire de livraison
+        document.getElementById('delivery-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            
+            // Récupération des valeurs des champs de formulaire
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            var phone = document.getElementById('phone').value;
+
+            
+            // Envoi des données à un serveur ou traitement supplémentaire
+            // Ici, vous pouvez ajouter votre code pour le traitement de la commande
+            
+            // Exemple : Affichage des données de la commande dans la console
+            console.log('Nom : ' + name);
+            console.log('Email : ' + email);
+            <form id="delivery-form" action="livraisonn.html">
+
+
